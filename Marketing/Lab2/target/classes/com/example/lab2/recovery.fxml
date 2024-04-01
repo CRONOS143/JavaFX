@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab2.RECOVERY">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="603.0">
+         <image>
+            <Image url="@1.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="RESET" layoutX="323.0" layoutY="163.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="142.0" styleClass="Button" stylesheets="@style.css" text="Відновитись" />
+      <TextField fx:id="Login" alignment="CENTER" layoutX="56.4" layoutY="43.0" prefHeight="39.0" prefWidth="144.0" promptText="LOGIN" styleClass="pass" stylesheets="@style.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.6039215922355652" green="0.0470588244497776" blue="0.0470588244497776" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </TextField>
+      <TextField fx:id="PASSWORD" alignment="CENTER" layoutX="56.4" layoutY="95.0" prefHeight="39.0" prefWidth="144.0" promptText="Password" styleClass="pass" stylesheets="@style.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.6039215922355652" green="0.0470588244497776" blue="0.0470588244497776" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </TextField>
+      <TextField fx:id="ROLES" alignment="CENTER" layoutX="56.0" layoutY="144.0" prefHeight="39.0" prefWidth="145.0" promptText="Role (Client)" styleClass="pass" stylesheets="@style.css">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.6039215922355652" green="0.0470588244497776" blue="0.0470588244497776" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </TextField>
+      <Label alignment="CENTER" layoutX="70.0" layoutY="16.0" prefHeight="17.0" prefWidth="124.0" text="ПАНЕЛЬ ДАНИХ">
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+         <effect>
+            <Lighting diffuseConstant="1.18">
+               <bumpInput>
+                  <Shadow>
+                     <color>
+                        <Color red="0.24834510684013367" green="0.13748781383037567" blue="0.8026315569877625" />
+                     </color>
+                  </Shadow>
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.7763158082962036" green="0.02156432718038559" blue="0.02156432718038559" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

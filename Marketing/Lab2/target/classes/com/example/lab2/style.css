@@ -1,0 +1,72 @@
+.pass{
+    -fx-prompt-text-fill:  #0d00ff;
+    }
+
+
+.Button{
+    -fx-background-color: linear-gradient(to bottom, #610303, #0720ad);
+    -fx-background-radius: 20;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-padding: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 2);
+}
+.Button:hover {
+    -fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+    -fx-background-color: linear-gradient(to bottom, #040347, #520b02);
+}
+
+.Button:pressed {
+    -fx-background-insets: 0 0 1 0, 0, 0, 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 1);
+    -fx-background-color: linear-gradient(to bottom, #0f5202, #0f5202);
+}
+
+.Button:disabled {
+    -fx-opacity: 0.4;
+}
+
+/* GLUON Tabs style */
+.tab-pane .tab-header-background {
+    -fx-background-color: rgb(36, 32, 32);
+    -fx-font-size:24px;
+}
+
+.TABS .tab {
+    -fx-text-fill: rgb(56, 5, 5);
+}
+
+.tab-pane .headers-region {
+    -fx-background-color: transparent;
+}
+
+.tab-pane .TABS-header-background .showing {
+    -fx-background-color: -gluon-tab-selected-color;
+}
+
+.tab-pane .TABS {
+    -fx-padding: 0.166667em 1em 0.25em 1em;
+    -fx-background-color: transparent;
+    -fx-border-width: 1px;
+    -fx-border-color: rgb(1, 56, 42);
+}
+
+.tab-pane .TABS:selected .focus-indicator {
+    -fx-background-color: -gluon-tab-selected-color;
+}
+
+.tab-pane .TABS .text {
+    -fx-font-size: 1.3em;
+}
+
+.TABS:selected .text {
+    -fx-fill: rgb(2, 5, 151);
+
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .TABS:selected .focus-indicator {
+    -fx-background-color: -gluon-tab-selected-color;
+}

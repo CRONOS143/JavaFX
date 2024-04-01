@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab2.CLIENT_WINDOW">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0">
+         <image>
+            <Image url="@2.jpg" />
+         </image>
+      </ImageView>
+      <TabPane fx:id="TAB_PANEL" cache="true" depthTest="DISABLE" prefHeight="600.0" prefWidth="800.0" side="BOTTOM" stylesheets="@style.css" tabClosingPolicy="UNAVAILABLE" tabMinHeight="20.0" tabMinWidth="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <tabs>
+          <Tab fx:id="TAB_DOVIRA" styleClass="TABS" text="Довіри">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="493.0" prefWidth="715.0">
+                     <children>
+                        <TableView fx:id="DOVIRA" layoutX="308.0" layoutY="64.0" prefHeight="444.0" prefWidth="478.0">
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.11622807383537292" green="0.3783625662326813" blue="0.4736842215061188" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </TableView>
+                        <Separator layoutX="260.0" layoutY="-5.0" orientation="VERTICAL" prefHeight="575.0" prefWidth="11.0" style="-fx-background-color: RED;">
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.06360000371932983" green="0.07248380780220032" blue="0.5299999713897705" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                           <opaqueInsets>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </opaqueInsets>
+                        </Separator>
+                        <Button fx:id="DOVIRA_COSHTIV" layoutX="7.0" layoutY="490.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="118.0" styleClass="Button" stylesheets="@style.css" text="Довірити кошти" />
+                        <Button fx:id="SEARCHER1" layoutX="136.0" layoutY="490.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="118.0" styleClass="Button" stylesheets="@style.css" text="Пошук" />
+                        <TextField fx:id="COMPANIA" alignment="CENTER" layoutX="32.0" layoutY="75.0" prefHeight="39.0" prefWidth="210.0" promptText="Компанія" styleClass="pass" stylesheets="@style.css">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.6039215922355652" green="0.0470588244497776" blue="0.0470588244497776" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </TextField>
+                        <TextField fx:id="DOVARENI_COSHTI" alignment="CENTER" layoutX="31.0" layoutY="276.0" prefHeight="39.0" prefWidth="210.0" promptText="Довірена сума" styleClass="pass" stylesheets="@style.css">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.6039215922355652" green="0.0470588244497776" blue="0.0470588244497776" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </TextField>
+                        <TextField fx:id="ANALYTICS_COMPANIA" alignment="CENTER" layoutX="31.0" layoutY="326.0" prefHeight="39.0" prefWidth="210.0" promptText="Аналітична компанія" styleClass="pass" stylesheets="@style.css">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.6039215922355652" green="0.0470588244497776" blue="0.0470588244497776" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </TextField>
+                        <TextField fx:id="ACCEPT_MONEY" alignment="CENTER" layoutX="31.0" layoutY="389.0" prefHeight="39.0" prefWidth="210.0" promptText="Дозволена сума" styleClass="pass" stylesheets="@style.css">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.6039215922355652" green="0.0470588244497776" blue="0.0470588244497776" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </TextField>
+                        <Label alignment="CENTER" layoutX="44.0" layoutY="30.0" prefHeight="34.0" prefWidth="185.0" text="МЕНЮ" textFill="#b20808">
+                           <opaqueInsets>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Cambria Italic" size="27.0" />
+                           </font>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.09879893809556961" green="0.018213937059044838" blue="0.30263158679008484" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Label>
+                        <TextField fx:id="IDENTO" alignment="CENTER" layoutX="31.0" layoutY="438.0" prefHeight="39.0" prefWidth="210.0" promptText="Ідентифікатор" styleClass="pass" stylesheets="@style.css">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.6039215922355652" green="0.0470588244497776" blue="0.0470588244497776" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </TextField>
+                        <DatePicker fx:id="DATE_START" layoutX="31.0" layoutY="130.0" prefHeight="34.0" prefWidth="209.0" promptText="Дата укладання" styleClass="pass" stylesheets="@style.css">
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.5215686559677124" green="0.5215686559677124" blue="0.658823549747467" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </DatePicker>
+                        <DatePicker fx:id="DATE_END" layoutX="31.0" layoutY="179.0" prefHeight="34.0" prefWidth="209.0" promptText="Дата кінця" styleClass="pass" stylesheets="@style.css">
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow>
+                                       <color>
+                                          <Color red="0.2763157784938812" green="0.14711257815361023" blue="0.14711257815361023" />
+                                       </color>
+                                    </Shadow>
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.5215686559677124" green="0.5215686559677124" blue="0.658823549747467" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </DatePicker>
+                        <TextField fx:id="FOND" alignment="CENTER" layoutX="32.0" layoutY="227.0" prefHeight="39.0" prefWidth="210.0" promptText="ФОНД" styleClass="pass" stylesheets="@style.css">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.6039215922355652" green="0.0470588244497776" blue="0.0470588244497776" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="TAB_INFO" styleClass="TABS" text="Інформація про компанію">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="CLIENT" layoutX="280.0" layoutY="64.0" prefHeight="444.0" prefWidth="506.0">
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.11622807383537292" green="0.3783625662326813" blue="0.4736842215061188" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </TableView>
+                        <Separator layoutX="260.0" layoutY="-5.0" orientation="VERTICAL" prefHeight="575.0" prefWidth="11.0" style="-fx-background-color: RED;">
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.06360000371932983" green="0.07248380780220032" blue="0.5299999713897705" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                           <opaqueInsets>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </opaqueInsets>
+                        </Separator>
+                        <Button fx:id="UPDATER" layoutX="14.0" layoutY="436.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="103.0" styleClass="Button" stylesheets="@style.css" text="Оновити" />
+                        <TextField fx:id="NAME_VKLADNIK" alignment="CENTER" layoutX="29.0" layoutY="64.0" prefHeight="39.0" prefWidth="210.0" promptText="Назва" styleClass="pass" stylesheets="@style.css">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.6039215922355652" green="0.0470588244497776" blue="0.0470588244497776" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </TextField>
+                        <TextField fx:id="VLASNIST" alignment="CENTER" layoutX="29.0" layoutY="119.0" prefHeight="39.0" prefWidth="210.0" promptText="Вид власності" styleClass="pass" stylesheets="@style.css">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.6039215922355652" green="0.0470588244497776" blue="0.0470588244497776" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </TextField>
+                        <TextArea fx:id="ADDRESS" layoutX="31.0" layoutY="176.0" prefHeight="75.0" prefWidth="209.0" promptText="Адреса" styleClass="pass" stylesheets="@style.css">
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.6039215922355652" green="0.0470588244497776" blue="0.0470588244497776" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </TextArea>
+                        <Button fx:id="SEARCHER2" layoutX="144.0" layoutY="436.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="103.0" styleClass="Button" stylesheets="@style.css" text="Пошук" />
+                        <TextField fx:id="MOB_PHONE" alignment="CENTER" layoutX="31.0" layoutY="283.0" prefHeight="39.0" prefWidth="210.0" promptText="Номер телефону" styleClass="pass" stylesheets="@style.css">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.6039215922355652" green="0.0470588244497776" blue="0.0470588244497776" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </TextField>
+                        <TextField fx:id="IDENT" alignment="CENTER" layoutX="29.0" layoutY="336.0" prefHeight="39.0" prefWidth="210.0" promptText="Вид власності" styleClass="pass" stylesheets="@style.css" text="Ідентифікатор">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.6039215922355652" green="0.0470588244497776" blue="0.0470588244497776" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </TextField>
+                        <Label alignment="CENTER" layoutX="42.0" layoutY="14.0" prefHeight="34.0" prefWidth="185.0" text="МЕНЮ" textFill="#b20808">
+                           <opaqueInsets>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Cambria Italic" size="27.0" />
+                           </font>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.09879893809556961" green="0.018213937059044838" blue="0.30263158679008484" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="TAB_VKLAD" styleClass="TABS" text="Мої вклади">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="DEPOSIT" layoutX="292.0" layoutY="52.0" prefHeight="219.0" prefWidth="489.0">
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.11622807383537292" green="0.3783625662326813" blue="0.4736842215061188" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </TableView>
+                        <TableView fx:id="PAPER" layoutX="292.0" layoutY="327.0" prefHeight="219.0" prefWidth="489.0">
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.11622807383537292" green="0.3783625662326813" blue="0.4736842215061188" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </TableView>
+                        <Label alignment="CENTER" layoutX="590.0" layoutY="14.0" prefHeight="34.0" prefWidth="185.0" text="Депозити" textFill="#b20808">
+                           <opaqueInsets>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Cambria Italic" size="27.0" />
+                           </font>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.09879893809556961" green="0.018213937059044838" blue="0.30263158679008484" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="590.0" layoutY="286.0" prefHeight="35.0" prefWidth="196.0" text="Цінні папери" textFill="#b20808">
+                           <opaqueInsets>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Cambria Italic" size="28.0" />
+                           </font>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.09879893809556961" green="0.018213937059044838" blue="0.30263158679008484" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Label>
+                        <Separator layoutX="260.0" layoutY="-5.0" orientation="VERTICAL" prefHeight="575.0" prefWidth="11.0" style="-fx-background-color: RED;">
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.06360000371932983" green="0.07248380780220032" blue="0.5299999713897705" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                           <opaqueInsets>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </opaqueInsets>
+                        </Separator>
+                        <TextField fx:id="DOVIRA_NUMBER" alignment="CENTER" layoutX="27.0" layoutY="232.0" prefHeight="39.0" prefWidth="210.0" promptText="№ Довіри" styleClass="pass" stylesheets="@style.css">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.6039215922355652" green="0.0470588244497776" blue="0.0470588244497776" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </TextField>
+                        <Button fx:id="SEARCHER3" layoutX="32.0" layoutY="410.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="200.0" styleClass="Button" stylesheets="@style.css" text="Пошук" />
+                        <Label alignment="CENTER" layoutX="40.0" layoutY="31.0" prefHeight="34.0" prefWidth="185.0" text="МЕНЮ" textFill="#b20808">
+                           <opaqueInsets>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Cambria Italic" size="27.0" />
+                           </font>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.09879893809556961" green="0.018213937059044838" blue="0.30263158679008484" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+         <opaqueInsets>
+            <Insets left="5.0" />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TabPane>
+   </children>
+</AnchorPane>

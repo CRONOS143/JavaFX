@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="701.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectcoursework.Admin_Panel_Controller">
+   <children>
+      <TabPane fx:id="Tab_ADMIN_PANE" blendMode="COLOR_BURN" cacheHint="ROTATE" layoutX="4.0" layoutY="55.0" prefHeight="646.0" prefWidth="1093.0" rotateGraphic="true" side="LEFT" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
+        <tabs>
+          <Tab fx:id="Clients_tab" text="Клієнти">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="607.0" prefWidth="1042.0">
+                     <children>
+                        <TableView fx:id="Clients_Table" layoutY="3.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="643.0" prefWidth="736.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <effect>
+                              <SepiaTone />
+                           </effect></TableView>
+                        <Button fx:id="Clients_Add" layoutX="872.0" layoutY="376.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="Додати" AnchorPane.leftAnchor="872.0" AnchorPane.rightAnchor="82.0" />
+                        <Button fx:id="Clients_Update" layoutX="872.0" layoutY="426.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="Оновити" textAlignment="CENTER" AnchorPane.leftAnchor="872.0" AnchorPane.rightAnchor="82.0" />
+                        <Button fx:id="Clients_del" layoutX="872.0" layoutY="476.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="Видалити" AnchorPane.leftAnchor="872.0" AnchorPane.rightAnchor="82.0" />
+                        <Button fx:id="Clients_search" layoutX="872.0" layoutY="526.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="Пошук" AnchorPane.leftAnchor="872.0" AnchorPane.rightAnchor="82.0" />
+                        <TextField fx:id="Clients_id" layoutX="827.0" layoutY="25.0" prefHeight="31.0" prefWidth="175.0" promptText="ID Клієнта:" AnchorPane.leftAnchor="835.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="25.0" />
+                        <TextField fx:id="Clients_name" layoutX="827.0" layoutY="75.0" prefHeight="31.0" prefWidth="175.0" promptText="Ім'я власника:" AnchorPane.leftAnchor="835.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="75.0" />
+                        <TextField fx:id="Clients_middlename" layoutX="835.0" layoutY="125.0" prefHeight="31.0" prefWidth="175.0" promptText="По-батькові власника:" AnchorPane.leftAnchor="835.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="125.0" />
+                        <DatePicker fx:id="Clients_DateBirthday" layoutX="813.0" layoutY="288.0" prefHeight="31.0" prefWidth="175.0" promptText="Дата народження:" AnchorPane.leftAnchor="835.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="288.0" />
+                        <TextField fx:id="Clients_surname" layoutX="827.0" layoutY="175.0" prefHeight="31.0" prefWidth="175.0" promptText="Прізвище власника:" AnchorPane.leftAnchor="835.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="175.0" />
+                        <TextField fx:id="Clients_phone" layoutX="828.0" layoutY="225.0" prefHeight="31.0" prefWidth="175.0" promptText="Номер телефону:" AnchorPane.leftAnchor="835.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="225.0" />
+                     </children>
+                     <effect>
+                        <DropShadow color="#7972f8" />
+                     </effect>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="Auto_tab" text="Автo">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="Auto_table" prefHeight="646.0" prefWidth="736.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <effect>
+                              <SepiaTone />
+                           </effect></TableView>
+                        <Button fx:id="Auto_Search" layoutX="872.0" layoutY="419.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="Пошук" AnchorPane.leftAnchor="872.0" AnchorPane.rightAnchor="82.0" />
+                        <Button fx:id="Auto_Del" layoutX="872.0" layoutY="519.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="Видалити" AnchorPane.leftAnchor="872.0" AnchorPane.rightAnchor="82.0" />
+                        <Button fx:id="Auto_Update" layoutX="872.0" layoutY="469.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="Оновити" textAlignment="CENTER" AnchorPane.leftAnchor="872.0" AnchorPane.rightAnchor="82.0" />
+                        <Button fx:id="Auto_add" layoutX="872.0" layoutY="569.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="Додати" AnchorPane.leftAnchor="872.0" AnchorPane.rightAnchor="82.0" />
+                        <TextField fx:id="Auto_ID" layoutX="786.0" layoutY="15.0" prefHeight="31.0" prefWidth="175.0" promptText="ID автівки:" AnchorPane.leftAnchor="835.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="25.0" />
+                        <TextField fx:id="Auto_model" layoutX="835.0" layoutY="75.0" prefHeight="31.0" prefWidth="175.0" promptText="Модель автівки (з VIN-кодом):" AnchorPane.leftAnchor="835.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="75.0" />
+                        <TextField fx:id="Auto_number" layoutX="786.0" layoutY="98.0" prefHeight="31.0" prefWidth="175.0" promptText="Держ. номер:" AnchorPane.leftAnchor="835.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="125.0" />
+                        <TextField fx:id="Auto_NameClient" layoutX="786.0" layoutY="162.0" prefHeight="31.0" prefWidth="175.0" promptText="Ім'я власника:" AnchorPane.leftAnchor="835.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="225.0" />
+                        <TextField fx:id="Auto_MiddleClient" layoutX="786.0" layoutY="206.0" prefHeight="31.0" prefWidth="175.0" promptText="По-батькові власника:" AnchorPane.leftAnchor="835.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="275.0" />
+                        <TextField fx:id="Auto_SurnameClient" layoutX="786.0" layoutY="260.0" prefHeight="31.0" prefWidth="175.0" promptText="Прізвище власника:" AnchorPane.leftAnchor="835.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="325.0" />
+                        <DatePicker fx:id="Auto_DateOfMade" layoutX="869.0" layoutY="141.0" prefHeight="31.0" prefWidth="175.0" promptText="Дата випуску:" AnchorPane.leftAnchor="835.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="175.0" />
+                     </children>
+                     <effect>
+                        <DropShadow color="#7972f8" />
+                     </effect>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="Order_tab" text="Заявки">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="Order_table" prefHeight="646.0" prefWidth="736.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <effect>
+                              <SepiaTone />
+                           </effect></TableView>
+                        <DatePicker fx:id="Order_DateOfMade" layoutX="870.0" layoutY="15.0" prefHeight="31.0" prefWidth="173.0" promptText="Дата випуску:" AnchorPane.leftAnchor="870.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="15.0" />
+                        <DatePicker fx:id="Order_DateStart" layoutX="870.0" layoutY="70.0" prefHeight="31.0" prefWidth="173.0" promptText="Початок ремонту:" AnchorPane.leftAnchor="870.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="70.0" />
+                        <DatePicker fx:id="Order_DateEnd" layoutX="870.0" layoutY="125.0" prefHeight="31.0" prefWidth="173.0" promptText="Кінець ремонту:" AnchorPane.leftAnchor="870.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="125.0" />
+                        <TextField fx:id="Order_ID" layoutX="744.0" layoutY="15.0" prefHeight="31.0" prefWidth="116.0" promptText="ID заявки:" AnchorPane.leftAnchor="744.0" AnchorPane.topAnchor="15.0" />
+                        <TextArea fx:id="Order_AutoModel" layoutX="746.0" layoutY="207.0" prefHeight="60.0" prefWidth="299.0" promptText="Модель машини:" AnchorPane.leftAnchor="746.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="207.0" />
+                        <TextField fx:id="Order_NumberAuto" layoutX="744.0" layoutY="70.0" prefHeight="31.0" prefWidth="117.0" promptText="Держ. номер:" AnchorPane.leftAnchor="744.0" AnchorPane.topAnchor="70.0" />
+                        <TextField fx:id="Order_Cost" layoutX="744.0" layoutY="125.0" prefHeight="31.0" prefWidth="117.0" promptText="Ціна ремонту:" AnchorPane.leftAnchor="744.0" AnchorPane.topAnchor="125.0" />
+                        <TextArea fx:id="Order_TypeOfRepair" layoutX="746.0" layoutY="277.0" prefHeight="60.0" prefWidth="299.0" promptText="Тип та деталі ремонту:" AnchorPane.leftAnchor="746.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="277.0" />
+                        <TextField fx:id="Order_NameClient" layoutX="746.0" layoutY="352.0" prefHeight="31.0" prefWidth="144.0" promptText="Ім'я власника:" AnchorPane.leftAnchor="746.0" />
+                        <TextField fx:id="Order_MiddleClient" layoutX="746.0" layoutY="407.0" prefHeight="31.0" prefWidth="144.0" promptText="По-батькові власника:" AnchorPane.leftAnchor="746.0" />
+                        <TextField fx:id="Order_Executor" layoutX="901.0" layoutY="352.0" prefHeight="31.0" prefWidth="144.0" promptText="Прізвище майстра:" AnchorPane.leftAnchor="901.0" AnchorPane.rightAnchor="9.0" />
+                        <TextField fx:id="Order_SurnameClient" layoutX="746.0" layoutY="465.0" prefHeight="31.0" prefWidth="144.0" promptText="Прізвище власника:" AnchorPane.leftAnchor="746.0" AnchorPane.rightAnchor="9.0" />
+                        <TextField fx:id="Order_ExpExecutor" layoutX="901.0" layoutY="407.0" prefHeight="31.0" prefWidth="144.0" promptText="Досвід майстра:" AnchorPane.leftAnchor="901.0" AnchorPane.rightAnchor="9.0" />
+                        <MenuButton fx:id="Order_Buttons" layoutX="838.0" layoutY="524.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="114.0" text="Меню" textAlignment="CENTER" AnchorPane.leftAnchor="838.0" AnchorPane.rightAnchor="102.0" AnchorPane.topAnchor="524.0">
+                          <items>
+                            <MenuItem fx:id="Order_Search" mnemonicParsing="false" text="Пошук" />
+                            <MenuItem fx:id="Order_Add" mnemonicParsing="false" text="Додати" />
+                              <MenuItem fx:id="Order_Update" mnemonicParsing="false" text="Оновити" />
+                              <MenuItem fx:id="Order_Del" mnemonicParsing="false" text="Видалити" />
+                              <MenuItem fx:id="Order_Dop" mnemonicParsing="false" text="Докладніше" />
+                          </items>
+                        </MenuButton>
+                        <DatePicker fx:id="Order_DateOfIssue" layoutX="786.0" layoutY="165.0" promptText="Дата звернення:" AnchorPane.leftAnchor="746.0" AnchorPane.rightAnchor="9.0" />
+                        <Label layoutX="755.0" layoutY="590.0" prefHeight="40.0" prefWidth="285.0" text="Перед початком, прочитайте: докладніше" AnchorPane.leftAnchor="746.0" AnchorPane.rightAnchor="9.0" />
+                     </children>
+                     <effect>
+                        <DropShadow color="#7972f8" />
+                     </effect>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="Mech_tab" text="Механіки">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="Mech_table" prefHeight="646.0" prefWidth="736.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <effect>
+                              <SepiaTone />
+                           </effect></TableView>
+                        <Button fx:id="Mech_Search" layoutX="872.0" layoutY="440.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="Пошук" AnchorPane.leftAnchor="872.0" AnchorPane.rightAnchor="82.0" />
+                        <Button fx:id="Mech_UPDATE" layoutX="872.0" layoutY="530.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="Оновити" textAlignment="CENTER" AnchorPane.leftAnchor="872.0" AnchorPane.rightAnchor="82.0" />
+                        <Button fx:id="Mech_Add" layoutX="872.0" layoutY="485.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="Додати" AnchorPane.leftAnchor="872.0" AnchorPane.rightAnchor="82.0" />
+                        <Button fx:id="Mech_Del" layoutX="872.0" layoutY="575.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="Видалити" AnchorPane.leftAnchor="872.0" AnchorPane.rightAnchor="82.0" />
+                        <TextField fx:id="Mech_Id" layoutX="835.0" layoutY="14.0" prefHeight="31.0" prefWidth="175.0" promptText="ID Механіка:" AnchorPane.leftAnchor="835.0" AnchorPane.rightAnchor="45.0" />
+                        <TextField fx:id="Mech_Name" layoutX="835.0" layoutY="74.0" prefHeight="31.0" prefWidth="175.0" promptText="Ім'я механіка:" AnchorPane.leftAnchor="835.0" AnchorPane.rightAnchor="45.0" />
+                        <TextField fx:id="Mech_Middle" layoutX="835.0" layoutY="134.0" prefHeight="31.0" prefWidth="175.0" promptText="По-батькові механіка:" AnchorPane.leftAnchor="835.0" AnchorPane.rightAnchor="45.0" />
+                        <TextField fx:id="Mech_Age" layoutX="835.0" layoutY="374.0" prefHeight="31.0" prefWidth="175.0" promptText="Скільки років?" AnchorPane.leftAnchor="835.0" AnchorPane.rightAnchor="45.0" />
+                        <TextField fx:id="Mech_Surname" layoutX="835.0" layoutY="194.0" prefHeight="31.0" prefWidth="175.0" promptText="Прізвище механіка:" AnchorPane.leftAnchor="835.0" AnchorPane.rightAnchor="45.0" />
+                        <TextField fx:id="Mech_Exp" layoutX="835.0" layoutY="254.0" prefHeight="31.0" prefWidth="175.0" promptText="Досвід роботи:" AnchorPane.leftAnchor="835.0" AnchorPane.rightAnchor="45.0" />
+                        <TextField fx:id="Mech_TypeOfWork" layoutX="835.0" layoutY="314.0" prefHeight="31.0" prefWidth="175.0" promptText="Спеціалізації з ремонту:" AnchorPane.leftAnchor="835.0" AnchorPane.rightAnchor="45.0" />
+                     </children>
+                     <effect>
+                        <DropShadow color="#7972f8" />
+                     </effect>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label alignment="CENTER" layoutX="367.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="ПАНЕЛЬ АДМІНІСТРАТОРА" textFill="#8d0101" AnchorPane.leftAnchor="367.0" AnchorPane.rightAnchor="367.0">
+         <font>
+            <Font name="Calibri Light" size="33.0" />
+         </font>
+      </Label>
+      <Separator layoutY="53.0" prefHeight="5.0" prefWidth="881.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <effect>
+            <DropShadow color="#750505">
+               <input>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </input>
+            </DropShadow>
+         </effect>
+      </Separator>
+   </children>
+</AnchorPane>

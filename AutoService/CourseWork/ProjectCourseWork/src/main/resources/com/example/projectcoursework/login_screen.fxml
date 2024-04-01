@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectcoursework.AuthoriseContoller">
+   <children>
+      <TextField fx:id="login" layoutX="483.0" layoutY="289.0" prefHeight="40.0" prefWidth="131.0" promptText="login" AnchorPane.leftAnchor="483.0" AnchorPane.rightAnchor="483.0" />
+      <Text layoutX="532.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AUTORIZATION" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="187.0" AnchorPane.leftAnchor="532.0" AnchorPane.rightAnchor="531.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="password" layoutX="483.0" layoutY="358.0" prefHeight="40.0" prefWidth="227.0" promptText="password" AnchorPane.leftAnchor="483.0" AnchorPane.rightAnchor="483.0" />
+      <Text fill="#9e9e9e" layoutX="512.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your data in the fields above" textOrigin="CENTER" wrappingWidth="227.0" AnchorPane.leftAnchor="512.0" AnchorPane.rightAnchor="511.0" />
+      <Button fx:id="confirm" layoutX="540.0" layoutY="489.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="99.0" text="Confirm" AnchorPane.leftAnchor="540.0" AnchorPane.rightAnchor="540.0" />
+      <Text fill="#9e9e9e" layoutX="512.0" layoutY="759.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2024 © ABCode" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="227.0" AnchorPane.bottomAnchor="36.0" AnchorPane.leftAnchor="512.0" AnchorPane.rightAnchor="511.0" AnchorPane.topAnchor="743.0" />
+   </children>
+</AnchorPane>

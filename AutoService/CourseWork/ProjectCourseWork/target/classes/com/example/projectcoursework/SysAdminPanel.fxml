@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="870.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectcoursework.SystemAdminPanel_controller">
+   <children>
+      <TableView fx:id="Authorise_Table" layoutX="32.0" layoutY="207.0" prefHeight="331.0" prefWidth="680.0" AnchorPane.bottomAnchor="362.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1000.0" AnchorPane.topAnchor="207.0" />
+      <Label layoutX="420.0" layoutY="44.0" prefHeight="47.0" prefWidth="594.0" text="ВІКНО СИСТЕМНОГО АДМІНІСТРАТОРА" AnchorPane.leftAnchor="420.0" AnchorPane.rightAnchor="500.0">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <TableView fx:id="Order_Table" layoutX="759.0" layoutY="207.0" prefHeight="331.0" prefWidth="924.0" AnchorPane.bottomAnchor="362.0" AnchorPane.leftAnchor="759.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="207.0" />
+      <MenuButton fx:id="Authorise_MenuButton" layoutX="193.0" layoutY="804.0" mnemonicParsing="false" text="Меню кнопок Авторизацію" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="193.0" AnchorPane.rightAnchor="1036.0">
+        <items>
+          <MenuItem fx:id="Authorise_Search" mnemonicParsing="false" text="ПОШУК" />
+            <MenuItem fx:id="Authorise_Add" mnemonicParsing="false" text="Додати" />
+            <MenuItem fx:id="Authorise_Update" mnemonicParsing="false" text="Оновити" />
+            <MenuItem fx:id="Authorise_Del" mnemonicParsing="false" text="Видалити" />
+            <MenuItem fx:id="WINDOWS_CLOSE" mnemonicParsing="false" text="Закрити все" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="Order_MenuButton" layoutX="1000.0" layoutY="804.0" mnemonicParsing="false" text="Меню кнопок заявок" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="1000.0" AnchorPane.rightAnchor="291.0">
+         <items>
+            <MenuItem fx:id="Order_Search" mnemonicParsing="false" text="Пошук" />
+            <MenuItem fx:id="Order_Dop" mnemonicParsing="false" text="Перегляд повной інформації" />
+         </items>
+      </MenuButton>
+      <Separator layoutY="97.0" prefHeight="10.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant color="#8d0303" />
+               </light>
+            </Lighting>
+         </effect>
+      </Separator>
+      <Separator layoutX="330.0" layoutY="502.0" prefHeight="10.0" prefWidth="774.0" rotate="90.0" AnchorPane.bottomAnchor="388.0" AnchorPane.topAnchor="530.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#9e0909" />
+               </light>
+            </Lighting>
+         </effect>
+      </Separator>
+      <TextField fx:id="Authorise_Password" layoutX="58.0" layoutY="570.0" promptText="Пароль користувача:" AnchorPane.rightAnchor="1092.0" />
+      <TextField fx:id="Authorise_Login" layoutX="58.0" layoutY="637.0" promptText="Логін користувача:" AnchorPane.leftAnchor="58.0" />
+      <TextField fx:id="Authorise_ID" layoutX="58.0" layoutY="564.0" promptText="ID Користувача:" AnchorPane.leftAnchor="58.0" />
+      <TextField fx:id="Authorise_role" layoutX="321.0" layoutY="637.0" promptText="Роль користувача: " AnchorPane.rightAnchor="1092.0" />
+      <Text layoutX="277.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Облікові записи" AnchorPane.leftAnchor="277.0" AnchorPane.rightAnchor="1295.3291015625" />
+      <Text layoutX="1234.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Заявки" AnchorPane.leftAnchor="1233.39501953125" AnchorPane.rightAnchor="401.73486328125" />
+      <TextField fx:id="Order_ID" layoutX="759.0" layoutY="549.0" promptText="ID:" AnchorPane.leftAnchor="759.0" AnchorPane.rightAnchor="650.0" />
+      <TextField fx:id="Order_Model" layoutX="759.0" layoutY="586.0" promptText="Модель/ВінКод:" AnchorPane.leftAnchor="759.0" AnchorPane.rightAnchor="650.0" />
+      <TextField fx:id="Order_Number" layoutX="759.0" layoutY="622.0" promptText="Держ. номер:" AnchorPane.leftAnchor="759.0" AnchorPane.rightAnchor="650.0" />
+      <TextField fx:id="Order_Cost" layoutX="759.0" layoutY="661.0" promptText="Ціна ремонту:" AnchorPane.leftAnchor="759.0" AnchorPane.rightAnchor="650.0" />
+      <TextField fx:id="Order_ClientName" layoutX="1456.0" layoutY="549.0" promptText="Ім'я власника:" AnchorPane.leftAnchor="1360.0" AnchorPane.rightAnchor="40.1298828125" />
+      <TextField fx:id="Order_ClientSurname" layoutX="1456.0" layoutY="586.0" promptText="Прізвище власника:" AnchorPane.leftAnchor="1360.0" AnchorPane.rightAnchor="40.1298828125" />
+      <TextField fx:id="Order_ClientMiddle" layoutX="1456.0" layoutY="622.0" promptText="По-батькові власника:" AnchorPane.leftAnchor="1360.0" AnchorPane.rightAnchor="40.1298828125" />
+      <TextField fx:id="Order_Executor" layoutX="1456.0" layoutY="661.0" promptText="Прізвище майстра:" AnchorPane.leftAnchor="1360.0" AnchorPane.rightAnchor="40.1298828125" />
+      <DatePicker fx:id="Order_DateOfMade" layoutX="1059.0" layoutY="554.0" promptText="Дата випуску:" AnchorPane.leftAnchor="1020.0" AnchorPane.rightAnchor="351.0" />
+      <DatePicker fx:id="Order_DateOfIssue" layoutX="1059.0" layoutY="621.0" promptText="Дата звернення:" AnchorPane.leftAnchor="1020.0" AnchorPane.rightAnchor="351.0" />
+      <DatePicker fx:id="Order_DateStart" layoutX="1059.0" layoutY="675.0" promptText="Дата початку ремонту:" AnchorPane.leftAnchor="1020.0" AnchorPane.rightAnchor="351.0" />
+      <DatePicker fx:id="Order_DateEnd" layoutX="1059.0" layoutY="721.0" promptText="Дата завершення ремонту:" AnchorPane.leftAnchor="1020.0" AnchorPane.rightAnchor="351.0" />
+      <TextField fx:id="Order_TypeOfWork" layoutX="759.0" layoutY="707.0" promptText="Деталі робіт:" AnchorPane.leftAnchor="759.0" AnchorPane.rightAnchor="650.0" />
+      <TextField fx:id="Order_ExpExecutor" layoutX="1456.0" layoutY="707.0" promptText="Досвід майстра:" AnchorPane.leftAnchor="1360.0" AnchorPane.rightAnchor="40.1298828125" />
+   </children>
+   <effect>
+      <DropShadow color="#800404" />
+   </effect>
+</AnchorPane>
